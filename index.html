@@ -21,19 +21,28 @@
             <img src="sailormoon-aesthetic.gif" id="tap-gif" alt="Tap me">
         </div>
         <div id="bottom-bar">
-            <img src="4 (3).png" alt="Home" class="menu-icon" data-target="main-screen">
+            <img src="file-cDg6XOzdiNNe7mQlnEPF1ZnA" alt="Home" class="menu-icon" data-target="main-screen">
             <img src="file-TEJdblnU6aydOLCUGy9myzDJ" alt="Settings" class="menu-icon" data-target="settings-screen">
-            <img src="6 (1).png" alt="Stats" class="menu-icon" data-target="stats-screen">
+            <img src="6 (1).png" alt="Achievements" class="menu-icon" data-target="achievements-screen">
             <img src="7.png" alt="Channels" class="menu-icon" data-target="channels-screen">
         </div>
     </div>
 
     <!-- Заглушки -->
+    <div id="home-screen" style="display: none;">
+        <h2>Домашняя страница</h2>
+        <p>Контент домашней страницы...</p>
+        <button onclick="showScreen('main-screen')">Назад на Главную</button>
+    </div>
     <div id="settings-screen" style="display: none;">
         <h2>Настройки</h2>
         <p>Общее число приглашенных друзей: <span id="friends-counter">0</span></p>
         <p>Уровень игрока: <span id="player-level">-</span></p>
         <p>Сумма заработанных денег: <span id="earned-money">0</span></p>
+        <button onclick="showScreen('main-screen')">Назад на Главную</button>
+    </div>
+    <div id="achievements-screen" style="display: none;">
+        <h2>Достижения игрока</h2>
         <p>Число выигранных турниров по падл теннису: <span id="padel-tournaments">0</span></p>
         <p>Число побед в трейдинг турнирах: <span id="trading-tournaments">0</span></p>
         <p>Число подписчиков в социальных сетях: <span id="social-followers">0</span></p>
@@ -55,11 +64,6 @@
                 <!-- Добавьте другие биржи по мере необходимости -->
             </select>
         </p>
-        <button onclick="showScreen('main-screen')">Назад на Главную</button>
-    </div>
-    <div id="stats-screen" style="display: none;">
-        <h2>Статистика</h2>
-        <p>Stats content goes here...</p>
         <button onclick="showScreen('main-screen')">Назад на Главную</button>
     </div>
     <div id="channels-screen" style="display: none;">
