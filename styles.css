@@ -23,7 +23,7 @@ body, html {
     height: 100px;
 }
 
-#main-screen, #settings-screen, #stats-screen, #channels-screen {
+#main-screen, #home-screen, #settings-screen, #achievements-screen, #channels-screen {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,27 +129,6 @@ body, html {
     }
 }
 
-#settings-screen, #stats-screen, #channels-screen {
+#settings-screen, #achievements-screen, #channels-screen, #home-screen {
     display: none;
 }
-
-#channels-screen ul {
-    list-style: none;
-    padding: 0;
-}
-
-#channels-screen ul li {
-    margin: 10px 0;
-}
-
-#channels-screen button {
-    margin-left: 10px;
-}
-/* оставим существующие стили без изменений, так как они уже определены */
-
-#settings-screen, #stats-screen, #channels-screen {
-    display: none;
-}
-
-/* остальные стили остаются без изменений */
-
